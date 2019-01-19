@@ -6,6 +6,7 @@
     <title>myMetrics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="switch.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Marck+Script"
       rel="stylesheet"
@@ -28,6 +29,17 @@
       </h1>
     </div>
     <div class="container">
+      <div class="top-row">
+        <h4>Sales</h4>
+        <label class="switch">
+          <input type="checkbox" id="czechbox" onclick="isChecked()" /><span
+            class="slider round"
+          ></span>
+        </label>
+        <h4>Retention</h4>
+      </div>
+    </div>
+    <div class="sales" id="sales">
       <div class="row">
         <h4>Current Occupancy</h4>
         <h4>Current Dials Per Hour</h4>
@@ -38,8 +50,8 @@
         <input type="number" placeholder="7.00" id="currentdph" required />
       </div>
       <div class="row">
-        <h4>Days In Month</h4>
-        <h4>Days Left In Month</h4>
+        <h4>Business Days In Month</h4>
+        <h4>Business Days Left In Month</h4>
       </div>
 
       <div class="row">
@@ -47,17 +59,43 @@
 
         <input type="number" placeholder="5" id="daysleft" required />
       </div>
-    </div>
-    <div class="container">
+
       <div class="row">
         <label>Talk Time Needed: <span id="talkneeded">134</span> </label>
 
         <label>Calls Needed: <span id="callsaday">56</span> </label>
       </div>
       <div class="row">
-        <button id="submit">Submit</button> <button id="reset">Reset</button>
+        <button id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
       </div>
     </div>
+    <div class="retention" id="retention">
+      <div class="row"><h4>Current Activities Per Hour</h4></div>
+      <div class="row">
+        <input type="number" placeholder="8.00" id="currentaph" required />
+      </div>
+      <div class="row">
+        <h4>Business Days In Month</h4>
+        <h4>Business Days Left In Month</h4>
+      </div>
+
+      <div class="row">
+        <input type="number" placeholder="19" id="daysinmonthtwo" required />
+
+        <input type="number" placeholder="5" id="dayslefttwo" required />
+      </div>
+
+      <div class="row">
+        <label>Activities Needed: <span id="activitiesneeded">64</span> </label>
+      </div>
+      <div class="row">
+        <button id="submittwo">Submit</button>
+        <button id="resettwo">Reset</button>
+      </div>
+    </div>
+
+    <script src="retention.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

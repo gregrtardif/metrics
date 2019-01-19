@@ -6,6 +6,7 @@ var talkneeded = document.querySelector("#talkneeded");
 var reset = document.querySelector("#reset");
 var callsaday = document.querySelector("#callsaday");
 var currentdph = document.querySelector("#currentdph");
+var czechbox = document.querySelector("#czechbox");
 var occ = 28;
 var occtotime = 0.08;
 var talkgoal = 2.24;
@@ -53,3 +54,13 @@ submit.addEventListener("click", function() {
 reset.addEventListener("click", function() {
   window.location.reload();
 });
+
+function isChecked() {
+  if (czechbox.checked) {
+    document.querySelector(".sales").style.display = "none";
+    document.querySelector(".retention").style.display = "flex";
+  } else {
+    document.querySelector(".sales").style.display = "flex";
+    document.querySelector(".retention").style.display = "none";
+  }
+}

@@ -17,7 +17,17 @@ input {
 h1 {
   width: auto;
 }
-
+h4 {
+  padding: 0 4px;
+  vertical-align: center;
+  margin: 10px;
+}
+.top-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -58,8 +68,11 @@ h1 {
   margin-top: 25px;
   padding: 0 2px;
 }
-
 .container {
+  width: 100%;
+  padding: 25px;
+}
+.sales {
   display: flex;
   flex-direction: column;
 
@@ -70,6 +83,19 @@ h1 {
   border-radius: 10px;
   background-color: #f0f0f0;
 }
+
+.retention {
+  display: none;
+  flex-direction: column;
+
+  min-width: 200px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 0;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
 button {
   min-width: 100px;
   max-width: 250px;
