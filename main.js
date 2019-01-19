@@ -59,8 +59,12 @@ function isChecked() {
   if (czechbox.checked) {
     document.querySelector(".sales").style.display = "none";
     document.querySelector(".retention").style.display = "flex";
+    document.querySelector(".salesheader").style.color = "gray";
+    document.querySelector(".retentionheader").style.color = "black";
   } else {
     document.querySelector(".sales").style.display = "flex";
     document.querySelector(".retention").style.display = "none";
+    document.querySelector(".retentionheader").style.color = "gray";
+    document.querySelector(".salesheader").style.color = "black";
   }
 }
