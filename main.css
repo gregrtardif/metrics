@@ -13,6 +13,16 @@ input {
   padding: 5px 15px;
   min-width: 48px;
   max-width: 60px;
+  border: 0;
+  border-bottom: 1px solid rgb(136, 135, 135);
+  background-color: #f0f0f0;
+  transition: all ease-in-out 0.23s;
+  width: 50px;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1.5px solid #7dc243;
 }
 h1 {
   width: auto;
