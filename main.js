@@ -38,20 +38,24 @@ daysleft.addEventListener("change", function() {
   daysleft = Number(daysleft.value);
 });
 submit.addEventListener("click", function() {
-  daysworked = callsinmonth / currentdph / 8;
-  talkneed = (
-    (60 *
-      ((daysworked + daysleft) * talkgoal -
-        currentocc * occtotime * daysworked)) /
-    daysleft
-  ).toFixed(2);
+  if (isNaN(currentocc, currentdph, callsinmonth, daysleft)) {
+    alert("Looks like we are missing a field. Please reset and try again");
+  } else {
+    daysworked = callsinmonth / currentdph / 8;
+    talkneed = (
+      (60 *
+        ((daysworked + daysleft) * talkgoal -
+          currentocc * occtotime * daysworked)) /
+      daysleft
+    ).toFixed(2);
 
-  talkneeded.textContent = talkneed;
-  callsneeded = (
-    ((daysworked + daysleft) * dialgoal - currentdph * 8 * daysworked) /
-    daysleft
-  ).toFixed(2);
-  callsaday.textContent = callsneeded;
+    talkneeded.textContent = talkneed;
+    callsneeded = (
+      ((daysworked + daysleft) * dialgoal - currentdph * 8 * daysworked) /
+      daysleft
+    ).toFixed(2);
+    callsaday.textContent = callsneeded;
+  }
 });
 reset.addEventListener("click", function() {
   window.location.reload();
