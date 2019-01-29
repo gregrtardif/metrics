@@ -76,7 +76,7 @@ h4 {
   -webkit-box-pack: space-between;
       -ms-flex-pack: space-between;
           justify-content: space-between;
-  text-align: center;
+ 
   margin: 5px 0;
   padding: 0 10%;
 }
