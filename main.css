@@ -74,7 +74,7 @@ h4 {
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
+      -ms-flex-pack: space-between;
           justify-content: space-evenly;
   text-align: center;
   margin: 5px 0;
