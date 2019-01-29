@@ -73,9 +73,9 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
+  -webkit-box-pack: space-between;
       -ms-flex-pack: space-between;
-          justify-content: space-evenly;
+          justify-content: space-between;
   text-align: center;
   margin: 5px 0;
 }
