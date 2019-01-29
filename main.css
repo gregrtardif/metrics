@@ -37,7 +37,7 @@ input {
   -webkit-transition: all ease-in-out 0.23s;
   -o-transition: all ease-in-out 0.23s;
   transition: all ease-in-out 0.23s;
-  width: 50px;
+  width: 50%;
   text-align: center;
 }
 input:focus {
