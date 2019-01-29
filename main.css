@@ -75,7 +75,7 @@ h4 {
           flex-direction: row;
   -webkit-box-pack: space-between;
       -ms-flex-pack: space-between;
-          justify-content: space-between;
+          justify-content: space-around;
   width: 78%;
  
   margin: 5px 0;
